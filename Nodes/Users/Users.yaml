@@ -1,0 +1,59 @@
+Name: Users
+Id: g=24ab6bae6befe08d67379f5f22c33b63
+Type: FolderType
+Children:
+- Name: Guest
+  Id: g=0803d24e37bf8d9e0c9014febedc69a8
+  Type: UserType
+  Children:
+  - Name: LocaleId
+    Id: g=ac0021f1fcd6ef4932ff29df5ce87799
+    Type: BaseVariableType
+    DataType: LocaleId
+    ReferenceType: HasProperty
+    Value: "en-US"
+  - Name: Password
+    Id: g=00bab52a7e653d743d17ea3b2e423684
+    Type: Password
+    DataType: Password
+    ReferenceType: HasProperty
+    AccessLevel: Read
+    Value: ""
+    Children:
+    - Name: Hash
+      Id: g=0229e9ffc0e73d289f95c20f59d807a4
+      Type: PropertyType
+      DataType: PasswordHash
+      AccessLevel: Read
+      Value: {"TypeId":{"Id":252,"Namespace":1},"Body":{"Hash":[34,195,181,88,25,31,66,207,159,64,199,30,48,106,8,23,10,159,17,224,118,18,30,48,79,57,164,212,60,199,41,88],"Salt":[169,225,225,184,5,25,205,224,235,117,205,21,233,140,71,178,98,106,5,207,8,221,203,85,239,225,206,96,156,109,226,9]}}
+    - Name: ChangeTimestamp
+      Id: g=7b5e50461c4f5ac4151733f02de8a7a4
+      Type: PropertyType
+      DataType: UtcTime
+      AccessLevel: Read
+      Value: "2022-12-21T08:59:48.7701912"
+    - Name: History
+      Id: g=be78a97fa5b54fb3ec1498fb80c3e252
+      Type: PropertyType
+      DataType: PasswordHash
+      AccessLevel: Read
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: []
+- Name: UserMail
+  Id: g=a155cf67f82de4a3e4c82a830acc383f
+  Type: UserType
+  Children:
+  - Name: LocaleId
+    Id: g=d4f8342211eae2f5ef134d962c9912e2
+    Type: BaseVariableType
+    DataType: LocaleId
+    ReferenceType: HasProperty
+    Value: "en-US"
+  - Name: Email
+    Id: g=634852aff3bd926746c8cc933bb1f8f8
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "email.email@email.com"
+- File: MainUsers/MainUsers.yaml
+- File: Groups/Groups.yaml
